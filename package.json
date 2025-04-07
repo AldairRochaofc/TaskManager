@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

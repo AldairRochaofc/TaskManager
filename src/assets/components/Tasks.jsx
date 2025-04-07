@@ -1,3 +1,1 @@
-function Tasks() {
-    
-}
+function Tasks() {}
