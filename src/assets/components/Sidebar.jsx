@@ -11,11 +11,12 @@ const Sidebar = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-2 p-2">
-        <SidebarButton variant="unselected">
-          <HomeIcon className="text-[#00ADB5]" />
-          Inicio
-        </SidebarButton>
+      <div className="flex flex-col items-center gap-2 p-2">
+        <div className="">
+          <SidebarButton variant="unselected" className="">
+            <HomeIcon className="text-[#00ADB5]" /> Inicio
+          </SidebarButton>
+        </div>
         <SidebarButton variant="selected">Minhas Tarefas</SidebarButton>
       </div>
     </div>
