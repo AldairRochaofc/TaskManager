@@ -4,7 +4,7 @@ const Button = ({ children, variant = "primary" }) => {
       return "bg-[#00ADB5] text-white"
     }
     if (variant === "ghost") {
-      return "bg-transparent text-[#818181]"
+      return "bg-transparent text-[#616161]"
     }
   }
   return (
