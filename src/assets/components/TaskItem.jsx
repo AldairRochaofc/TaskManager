@@ -1,7 +1,7 @@
 import CheckIcon from "../icons/check.svg?react"
 import LoadIcon from "../icons/loader.svg?react"
 import DetailsIcon from "../icons/link.svg?react"
-const TaskItem = ({ task }) => {
+const TaskItem = ({ task, handleTaskCheckboxClick }) => {
   const getStatusClass = () => {
     if (task.status === "done") {
       return "bg-[#00ADB5]  text-[#00ADB5]"
@@ -26,11 +26,10 @@ const TaskItem = ({ task }) => {
             className="absolute h-4 w-4 cursor-pointer opacity-0"
             checked={task.status === "done"}
             readOnly
+            onChange={() => handleTaskCheckboxClick(task.id)}
           />
           {task.status === "done" && <CheckIcon />}
-          {task.status === "in_progress" && (
-            <LoadIcon className="animate-spin" />
-          )}
+          {task.status === "in_progress" && <LoadIcon className="animate-spin" />}
         </label>
         {task.title}
       </div>
